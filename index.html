@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandom</title>
+  <link rel="shortcut icon" href="./img/Logo_Main.png" type="image/x-icon">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/tailwind.config.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Css -->
+  <link rel="stylesheet" href="./css//main.css">
+</head>
+
+<body>
+  <header class="font-comta w-full bg-[url('./img/banner.png')] h-[862px] bg-center bg-cover">
+    <div class="max-w-7xl mx-auto">
+      <nav class="pt-3">
+        <div class="flex justify-between items-center">
+          <a href="" class="object-cover block max-w-[177px] max-h-[57px]">
+            <img src="./img/Logo_Main.png" alt="logo">
+          </a>
+          <div>
+            <ul class="flex text-[18px] gap-3">
+              <li class="pl-0 pr-6 py-2 border-primary border-b-4">Trang chủ</li>
+              <li class="px-6 py-2">Tính năng</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="mt-[100px]">
+        <div>
+          <h2 class="text-[56px] max-w-[700px]">Mua sắm thời trang thông minh</h2>
+          <h4 class="text-[28px] mb-[50px]">When I like my outfit, I will be nicer</h4>
+        </div>
+        <div class="w-fit flex flex-col items-center ">
+          <button type="button" class="text-primary bg-black hover:opacity-[80%] text-[18px] font-medium rounded-full px-8 py-2.5">
+            Trải nghiệm brandom
+          </button>
+          <div class="mt-14 ">
+            <img class="object-cover w-[180px] h-[77px]" src="./img/google-play-badge.png" alt="app-store">
+          </div>
+          <div>
+            <img class="object-cover w-[180px] h-[77px]" src="./img/app-store-png-logo-33107.png" alt="app-store">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="btnMess" class="transition-all w-[95px] h-[95px] overflow-hidden fixed bottom-5 right-5 cursor-pointer z-[1000]">
+    <img class="block w-full h-full object-cover scale-[5.4]" src="./img/message.png" alt="">
+  </div>
+  <div id="messBox" class="invisible w-[300px] h-[568px] bg-white fixed bottom-5 right-5 rounded-xl border-2 border-[#707070] z-[10000]">
+    <div class="flex flex-col justify-between h-full">
+      <div class="flex justify-between border-b-2 border-[#707070]">
+        <div class="flex items-center pb-2 px-3">
+          <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+          <div class="w-[60px] h-[50px] overflow-hidden">
+            <img class="block object-cover w-full h-full scale-[6] relative left-5" src="./img/message.png" alt="">
+          </div>
+          <h5 class="ml-3">Shibom</h5>
+        </div>
+        <button class="p-3 mr-3 btnCloseMess">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div>
+        <div class="mb-2 flex items-end">
+          <div class="h-[30px] w-[50px] overflow-hidden">
+            <img class="block object-cover scale-[8] relative -right-2" src="./img/message.png" alt="">
+          </div>
+          <div class="text-[12px]">
+            <p class="rounded-full bg-primary p-2 mt-2">Chào mừng anh/ chị đến với Brandom </p>
+            <p class="rounded-full bg-primary p-2 mt-2">Shibom có thể giúp gì cho anh/chị ?</p>
+          </div>
+        </div>
+        <div class="border-t-2 border-[#707070] rounded-t-xl px-3 mt-3">
+          <p class="py-3 border-b-2 border-[#707070] text-[15px]">Tôi không biết mặc gì hôm nay</p>
+          <p class="py-3 border-b-2 border-[#707070] text-[15px]">Brandom là gì</p>
+          <p class="py-3 border-b-2 border-[#707070] text-[15px]">Tôi muốn tìm hiểu thêm</p>
+        </div>
+        <button class="w-full py-4 btnCloseMess">
+          Thoát
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto flex justify-center">
+      <div class="flex items-center justify-between py-3 max-h-[300px] w-[1000px]">
+        <img class="object-cover block w-[131px] h-[54px]" src="./img/vtv.png" alt="logo-chanel">
+        <img class="object-cover block w-[100px] h-[98px]" src="./img/chanel_14.png" alt="logo-chanel">
+        <img class="object-cover block w-[172px] h-[150px]" src="./img/brvn-logo-v3_white.png" alt="logo-chanel">
+        <img class="object-cover block w-[123px] h-[63px]" src="./img/zing.png" alt="logo-chanel">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-section font-comta py-8">
+    <div class="max-w-7xl mx-auto pb-10">
+      <h3 class="text-center w-full text-[45.5px] py-6">Brandom hoạt động như nào</h3>
+      <div class="flex justify-center items-center gap-10">
+        <button type="button"
+          class="btnTab transition-all border-2 text-black bg-primary hover:opacity-[80%] text-[21px] font-medium rounded-full px-8 py-2">
+          Tải app và đăng ký
+        </button>
+        <button type="button"
+          class="btnTab transition-all text-black bg-transparent border-2 hover:opacity-[80%] text-[21px] font-medium rounded-full px-8 py-2">
+          Lựa chọn phong cách của bạn
+        </button>
+        <button type="button"
+          class="btnTab transition-all text-black bg-transparent border-2 hover:opacity-[80%] text-[21px] font-medium rounded-full px-8 py-2">
+          Trải nghiệm mua sắm
+        </button>
+      </div>
+      <div id="tabRen" class="flex justify-center items-center py-8 mt-8 gap-8 overflow-hidden">
+        <div>
+          <ul class="max-w-[450px] text-[18px]">
+            <li class="mb-3">1. Tải ứng dụng miễn phí qua App store hoặc Google play store</li>
+            <li class="mb-3">2. Đăng ký bằng số điện thoại, email hoặc sử dụng tài khoản khách</li>
+            <li class="mb-3">3. Nhập mã xác thực tài khoản</li>
+          </ul>
+        </div>
+        <div>
+          <img class="object-cover block w-[350px] h-[250px] scale-[2.5]" src="./img/Untitled-1-01.png" alt="switch">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white font-genti py-14">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="font-semibold text-center text-[45.5px] mb-6">Tính năng</h3>
+      <div class="w-[800px] mx-auto">
+        <div class="grid grid-cols-10 gap-6">
+          <div class="col-span-6 relative bg-primary rounded-3xl px-6 py-6 h-[275px] overflow-hidden">
+            <h4 class="text-[28px] font-medium">Kết hợp công nghệ AI</h4>
+            <p class="max-w-[180px] leading-6 mt-3 text-[18px]">Brandom là sự kết hợp giữa thời trang và AI giúp người dùng có cái nhìn rõ ràng nhất
+              về thời
+              trang.</p>
+            <div class="bg-transparent w-[240px] h-[200px] absolute bottom-5 right-3 rounded-b-3xl overflow-hidden">
+              <img class="block w-full h-full object-cover scale-[1.8] relative bottom-2" src="./img/Untitled-1-04.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-4 relative bg-primary rounded-3xl h-[320px] px-6 py-6 overflow-hidden">
+            <h4 class="text-[28px] font-medium text-center">Chat bot AI</h4>
+            <p class="max-w-[230px] leading-6 text-[18px] text-center mx-auto">Chatbot của Brandom sẽ luôn trả lời người dùng nhanh nhất các vấn đề về
+              thời
+              trang.</p>
+            <div class="">
+              <img class="block object-cover w-full h-full scale-[3] relative top-[20px] right-[70px]" src="./img/Untitled-1-05.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-10 gap-6 items-end mt-2">
+          <div class="col-span-4 relative bg-primary rounded-3xl h-[320px] px-6 py-6 overflow-hidden">
+            <h4 class="text-[28px] font-medium text-center">Chat bot AI</h4>
+            <p class="max-w-[230px] leading-6 text-[18px] text-center mx-auto">
+              Brandom sẽ luôn gợi ý bạn những phong cách, style phù hợp, những bộ sưu tập được yêu thích và thịnh hành hiện tại.
+            </p>
+            <div class="">
+              <img class="block object-cover w-full h-full scale-[3] relative -bottom-5 -right-24" src="./img/Untitled-1-06.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-6 relative bg-primary rounded-3xl px-6 py-6 h-[275px] overflow-hidden">
+            <h4 class="text-[28px] font-medium">Kết hợp công nghệ AI</h4>
+            <p class="max-w-[350px] leading-6 mt-3 text-[18px]">
+              Ứng dụng được thiết kế tối ưu cho việc mua <br>
+              sắm thuận tiện, nhanh chóng mang <br>
+              lại trải nghiệm dễ dàng nhất <br>
+              cho người dùng.
+            </p>
+            <div class="bg-transparent w-[240px] h-[200px] absolute bottom-0 -right-12 rounded-b-3xl overflow-hidden">
+              <img class="block w-full h-full object-cover relative scale-[1.8] bottom-3 1right-6" src="./img/Untitled-1-07.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-section font-genti py-14 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="font-semibold text-center text-[45.5px] mb-6">Đặc quyền dành cho thành viên</h3>
+      <div class="w-[800px] mx-auto grid grid-cols-2 mt-2">
+        <img class="block object-cover col-span-1 scale-[2] relative top-5" src="./img/Untitled-1-08.png" alt="">
+        <div class="col-span-1">
+          <p class="text-[18px] max-w-[350px] ml-auto">
+            <span class="text-primary">Gợi ý đồ phù hợp:</span> Khi đăng ký làm thành viên, dữ liệu của bạn sẽ được lưu giúp ứng dụng có thể biết rõ
+            phong cách, hướng quần áo mà bạn
+            mong muốn để chọn những đồ phù hợp nhất
+          </p>
+          <p class="text-[18px] max-w-[350px] mt-4 ml-auto">
+            <span class="text-primary">Ranking:</span> Những người dùng sẽ nhận được ưu đãi, quà tặng lớn hơn theo giá trị tiền đã mua
+          </p>
+          <p class="text-[18px] max-w-[350px] mt-4 ml-auto">
+            <span class="text-primary">Dành cho người mới:</span> Khi đăng ký tài khoản bạn sẽ được nhận ngay mã freeship cho mọi giá trị của đơn
+            hàng.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white font-genti py-14 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="font-semibold text-center text-[45.5px] mb-6">Một số câu hỏi thường gặp</h3>
+      <div class="w-[800px] mx-auto grid grid-cols-2 mt-2">
+        <div class="col-span-1">
+          <h4 class="text-[25px]">Tôi có thể trả lại và hoàn tiền sản phẩm nếu có vấn đề không?</h4>
+          <p class="text-[18px] mt-[30px] max-w-[350px]">
+            Nếu sản phẩm có vấn đề gì xin hãy liên hệ bộ phận CSKH, chúng tôi sẽ tư vấn và có chính sách hoàn tiền phù hợp với vấn đề của bạn.
+          </p>
+          <img class="block object-cover w-full h-[450px] relative right-6" src="./img/Untitled-1-10.png" alt="">
+        </div>
+        <div class="col-span-1">
+          <img class="block object-cover w-full h-[450px] relative right-6" src="./img/Untitled-1-09.png" alt="">
+          <h4 class="text-[25px] text-center">Công nghệ AI hoạt động như thế nào?</h4>
+          <p class="text-[18px] mt-[30px] max-w-[320px] text-right mx-auto">
+            Công nghệ AI được ứng dụng vào việc hiển thị thời trang, kết hợp với hình ảnh người dùng để tạo ra những hình ảnh rõ nhất theo quần áo
+            người dùng mong muốn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary font-genti py-14 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="w-[800px] mx-auto mt-2">
+        <h5 class="text-[28px]">Brandom đi kèm nhiều tính năng tuyệt vời</h5>
+        <div class="grid grid-cols-2">
+          <div class="grid-cols-1">
+            <p class="text-[18px] max-w-[350px] mt-6">
+              Brandom là ứng dụng đầu tiên kết hợp giữa thời trang và công nghệ AI. Ứng dụng giúp người dùng dễ dàng tiếp cận thời
+              trang, phù hợp với mọi
+              yêu cầu của người dùng.
+            </p>
+
+            <div class="flex items-center mt-10">
+              <div class="">
+                <img class="object-cover w-[180px] h-[77px]" src="./img/google-play-badge.png" alt="app-store">
+              </div>
+              <div class="ml-10">
+                <img class="object-cover w-[180px] h-[77px]" src="./img/app-store-png-logo-33107.png" alt="app-store">
+              </div>
+            </div>
+          </div>
+          <div class="grid-cols-1 overflow-hidden max-h-[300px]">
+            <img class="block object-cover w-full h-[400px] relative -top-16" src="./img//Untitled-1-11.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#353739] py-12 font-genti text-white">
+    <div class="max-w-7xl mx-auto">
+      <div>
+        <img class="block object-cover w-[177px] h-[57px]" src="./img//Logo_Main.png" alt="">
+      </div>
+      <div class="grid grid-cols-10">
+        <div class="col-span-4">
+          <div class="grid grid-cols-2 mt-3">
+            <h5 class="col-span-1 text-[21px] text-white font-bold">Về Brandom</h5>
+            <h5 class="col-span-1 text-[21px] text-white font-bold">Chính sách</h5>
+          </div>
+          <p class="text-[14px] mt-20">Công Ty Cổ Phần Brandom <br>
+            Địa chỉ: 94 Lương Yên, Hai Bà Trưng, Hà Nội, Việt Nam <br>
+            Mã số doanh nghiệp: 0123456789
+          </p>
+        </div>
+        <div class="col-span-6 ml-14">
+          <div class="grid grid-cols-2">
+            <div class="col-span-1">
+              <h5 class="text-[21px] text-white font-bold mb-5 mt-3">Chứng nhận</h5>
+              <img class="block object-scale-down w-[180px] h-[80px]" src="./img/cong_thuong_blue.png" alt="">
+              <img class="block object-scale-down w-[180px] h-[80px]" src="./img/cong_thuong_red.png" alt="">
+            </div>
+            <div class="col-span-1">
+              <h5 class="text-[21px] text-white font-bold mb-5 mt-3">Kết nối với chúng tôi</h5>
+              <p class="font-monte text-primary mt-6">brandom@gmail.com</p>
+              <div class="flex items-center relative -left-5 mt-5">
+                <img class="block object-scale-down w-[85px] h-[85px]" src="./img/facebook_yellow.png" alt="">
+                <img class="block object-scale-down w-[85px] h-[85px]" src="./img/instagram.png" alt="">
+                <img class="block object-scale-down w-[85px] h-[85px]" src="./img/linked.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-10">
+        <p>Copyright 2023 by Brandom</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Js -->
+<script src="./js/main.js"></script>
+
+</html>
